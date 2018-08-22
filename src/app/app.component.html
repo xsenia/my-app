@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+
+<div>
+  {{ getName() }}
+</div>
+
+<div *ngFor="let item of getTodoItems(); let i = index">
+  <p><b>{{i + 1}}</b> {{ item.action }}</p>
+</div>
